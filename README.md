@@ -1,9 +1,9 @@
 Here is how to customize the "Welcome" page that says "please enter your participant label".
 
-Clone this repo, then customize the file `RoomInputLabel.html`.
-You must customize the `action` parameter to point to your oTree server & room name.
+Clone this repo, then install dependencies with `pip3 install -r requirements.txt`.
 
-First, install dependencies with `pip3 install -r requirements.txt`.
+Customize the file `RoomInputLabel.html`,
+and the URL to your site & room name in `main.py`.
 
 To run locally, do `uvicorn main:app --port 8500`.
 
