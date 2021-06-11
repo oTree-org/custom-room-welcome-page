@@ -4,12 +4,15 @@
 <h2>
     Welcome
 </h2>
-<form method="get" action="http://localhost:8000/room/econ101">
+<form method="get">
     <label for="participant_label">Please enter your participant label.</label>
     <br/>
     <input type="text" id="participant_label"
-           name="participant_label" class="form-control"/>
+           name="participant_label" class="form-control" value="{{ label }}"/>
     <br/>
+    {% if wrong_label %}
+    <p style="color: red">This participant label was not found; please try again.</p>
+    {% endif %}
 
     <p>
         <button>Next</button>

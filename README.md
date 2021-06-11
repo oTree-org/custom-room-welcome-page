@@ -3,6 +3,10 @@ Here is how to customize the "Welcome" page that says "please enter your partici
 Clone this repo, then customize the file `RoomInputLabel.html`.
 You must customize the `action` parameter to point to your oTree server & room name.
 
+First, install dependencies with `pip3 install -r requirements.txt`.
+
+To run locally, do `uvicorn main:app --port 8500`.
+
 Then, deploy to Heroku with:
 
 ```
